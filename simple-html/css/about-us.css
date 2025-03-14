@@ -1,5 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
 :root{
-    --color-base: #022342;
+    --color-base: #010e1b;
     --color-base-figure-background:#bdbcbc;
     --color-base-figure-border:#f2eded;
     --font-firt-title: "Playfair Display", serif;
@@ -25,7 +28,7 @@ h1{
 h2{
     border-bottom: 2px groove var(--color-base);
     margin-top: 30px;
-    font-family: "Doto", sans-serif;
+    font-family: "Playfair Display", serif;
 }
 figure{
     background-color:var(--color-base-figure-background);
@@ -37,9 +40,9 @@ figure{
 figcaption{
     font-style: italic;
     margin-top: 10px;
-    font-family: "Rock Salt", cursive;
+    font-family: "Oswald", sans-serif;
 }
 p{
     padding: 0 45px;
-    text-indent: 15px;
+    text-indent: 50px;
 }
