@@ -5,6 +5,7 @@ html{
     --color-base: #010e1b;
     --color-base-figure-background:#bdbcbc;
     --color-base-figure-border:#f2eded;
+    --color-base-footer: #292727;
     --font-firt-title: "Playfair Display", serif;
     --font-second-title: "Doto", sans-serif;
     --font-body: "Oswald", sans-serif;
@@ -45,4 +46,24 @@ figcaption{
 p{
     padding: 0 45px;
     text-indent: 50px;
+}
+#centro-distribuicao {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+#familia-pelho {
+    float: right;
+    margin: 0 0 10px 10px
+}
+#rodape {
+    color: #777;
+    margin: 30px 0;
+    padding: 30px 0;
+    color: var(--color-base-footer)
+}
+#rodape img {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 90px;
 }
