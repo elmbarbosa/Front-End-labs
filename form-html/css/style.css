@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Resetando estilos para garantir consistência */
 * {
     margin: 0;
     padding: 0;
@@ -6,131 +6,108 @@
     font-family: Arial, sans-serif;
 }
 
-/* Centraliza o conteúdo na tela */
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #f4f0e1; /* Cor de fundo ajustada conforme a imagem */
+    text-align: center;
     padding: 20px;
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
-    flex-direction: column; /* Faz o "Compre Online!" ficar abaixo do "Faça seu cadastro!" */
-    align-items: center; /* Centraliza o texto */
-    text-align: center; /* Centraliza o texto */
-    width: 100%;
+    align-items: center;
+    justify-content: space-between;
     max-width: 600px;
-    margin-bottom: 20px;
-    background: none; /* Remove o fundo azul */
+    margin: 0 auto 20px;
 }
 
-/* Estilização dos títulos */
+.header-text {
+    text-align: left;
+}
+
 .header-title {
-    font-size: 2em;
+    font-size: 26px;
     font-weight: bold;
-    color: #333;
+    color: black;
 }
 
 .header-subtitle {
-    font-size: 1.2em;
-    color: #555;
-    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffb400;
 }
 
-/* Logo alinhada à direita */
 .header-logo {
-    width: 80px;
+    width: 80px; /* Aumentando o tamanho da logo */
     height: auto;
-    margin-top: 10px;
 }
 
-/* Centraliza o formulário */
 .main-content {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
-/* Estilização do formulário */
 .form {
-    background: white;
+    width: 50%;
+    background-color: white;
     padding: 20px;
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilização dos fieldsets */
-fieldset {
-    border: 2px solid #d1a979; /* Borda bege */
-    border-radius: 8px;
+.fieldset {
+    border: 1px solid #ccc;
     padding: 15px;
     margin-bottom: 15px;
-    position: relative;
+    text-align: left;
+    background-color: #f8e0c0; /* Cor de fundo das seções ajustada */
 }
 
-/* Estilização das legendas (títulos dos formulários) */
-legend {
-    background-color: #f5deb3; /* Bege */
-    color: #5a4637; /* Cor de texto mais escura */
-    padding: 5px 15px;
-    border-radius: 5px;
+.fieldset-title {
     font-weight: bold;
-    font-size: 1.1em;
+    color: black;
 }
 
-/* Estilização dos labels */
-.label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* Estilização dos inputs */
-.input, .select, .input-file {
+.input, .select {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 4px;
 }
 
-/* Botões */
+.input-file {
+    margin-top: 5px;
+}
+
 .form-footer {
     display: flex;
     justify-content: space-between;
 }
 
 .btn-submit {
-    background-color: #28a745;
+    background-color: blue;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
-    cursor: pointer;
-    width: 48%;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .btn-reset {
-    background-color: #dc3545;
+    background-color: red;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
-    cursor: pointer;
-    width: 48%;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-/* Efeito hover nos botões */
 .btn-submit:hover {
-    background-color: #218838;
+    background-color: darkblue;
 }
 
 .btn-reset:hover {
-    background-color: #c82333;
+    background-color: darkred;
 }
