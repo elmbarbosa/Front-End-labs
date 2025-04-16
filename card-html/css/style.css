@@ -41,16 +41,16 @@ body {
 
 .card > div {
     background-color: var(--background-color-card);
-    border-radius: 10px;
-    padding: 20px 15px;
+    border-radius: 28px;
+    padding: 10px 25px;
     min-width: 300px;
-    height: 570px;
+    height: 575px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     flex-shrink: 0; /* evita que os cards encolham */
 }
@@ -63,27 +63,27 @@ body {
 }
 
 .card h1 {
-    margin-top: 30px;
-    font-size: 1.8rem;
+    margin-top: 27px;
+    font-size: 2.1rem;
     color: var(--text-color);
 }
 
 .card p {
-    font-size: 60px;
+    font-size: 65px;
     color: var(--primary-color);
-    margin-top: 10px;
+    margin-top: 25px;
     display: flex;
     align-items: baseline;
 }
 
 .card p span {
-    font-size: 20px;
-    margin-left: 4px;
+    font-size: 15px;
+    margin-left: 1px;
     color: var(--primary-color);
 }
 
 .card ul {
-    list-style: none;
+    list-style: align: center;
     padding: 0;
     margin: 100px 0 50px 0;
     color: var(--text-color);
