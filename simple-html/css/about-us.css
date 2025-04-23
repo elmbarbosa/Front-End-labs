@@ -1,71 +1,146 @@
-html{
-    scroll-behavior: smooth;
+:root {
+    --color-base: #040200; 
+    --color-base-figure-background: #f7f7f7;
+    --color-base-figure-border: #cfc5c5;
+    --color-base-footer: #777;
+    --font-base: "Oswald", sans-serif;
+    --font-base-weigth: 300;
+    --font-first-title: "Playfair Display", serif;
+    --font-first-title-weigth: 700;
 }
-:root{
-    --color-base: #010e1b;
-    --color-base-figure-background:#bdbcbc;
-    --color-base-figure-border:#f2eded;
-    --color-base-footer: #292727;
-    --font-firt-title: "Playfair Display", serif;
-    --font-second-title: "Doto", sans-serif;
-    --font-body: "Oswald", sans-serif;
-    --font-caption: "Rock Salt", cursive;
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     color: var(--color-base);
-    font-family: "Oswald", sans-serif;
+    font-family: var(--font-base);
+    font-weight: var(--font-base-weigth);
     margin-left: auto;
     margin-right: auto;
-    width: 940px;
-    padding: 0 15px;
+    width: 940px;    
 }
 
-
-main h1{
-    background-image: url("../img/sobre-background.jpg");
+h1 {
+    background-image: url(../img/sobre-background.jpg);
     padding: 10px;
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-first-title);
+    font-weight: var(--font-first-title-weigth);
 }
-h2{
+
+h2 {
     border-bottom: 2px groove var(--color-base);
     margin-top: 30px;
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-first-title);
+    font-weight: 400;
 }
-figure{
-    background-color:var(--color-base-figure-background);
-    border: 1px solid #ccc var(--color-base-figure-border);
+
+figure {
+    background-color: var(--color-base-figure-background);
+    border: 1px solid var(--color-base-figure-border);
     text-align: center;
     padding: 15px;
-    margin: 30px auto;
-    max-width: 100%;
+    margin: 30px;
 }
-figcaption{
-    font-style: italic;
-    margin-top: 10px;
+
+figcaption {
     font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
 }
-p{
+
+p {
     padding: 0 45px;
-    text-indent: 50px;
+    text-indent: 25px;
+    text-align: justify;
 }
+
 #centro-distribuicao {
-    margin-left: auto;
     margin-right: auto;
-    width: 550px;
+    margin-left: auto;
+    width: 550px;    
 }
-#familia-pelho {
-    float: right;
-    margin: 0 0 10px 10px
-}
+
 footer {
-    color: #777;
     margin: 30px 0;
     padding: 30px 0;
-    color: var(--color-base-footer)
+    color: var(--color-base-footer);
 }
+
 footer img {
     margin-right: 30px;
     vertical-align: middle;
-    width: 80px;
+    width: 94px;
+}
+
+#familia-pelho {
+    margin: 0 0 10px 10px;
+    float: right;
+}
+
+ul {
+    padding: 0 45px;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: auto;
+        margin: 0 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        margin-top: 20px;
+    }
+
+    p {
+        padding: 0 15px;
+        text-indent: 15px;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    figure {
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    #centro-distribuicao {
+        width: 100%;
+        max-width: 550px;
+        margin: 10px auto;
+        max-width: 90%;
+        padding: 0 20px;
+    }
+
+    #centro-distribuicao img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #familia-pelho {
+        float: none;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
 }
