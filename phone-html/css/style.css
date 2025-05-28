@@ -20,6 +20,12 @@ body {
 .theme-sunset {
     background: linear-gradient(135deg, #ff512f, #dd2476);
 }
+.theme-dark {
+    background: linear-gradient(135deg, #000000, #434343);
+}
+.theme-light {
+    background: linear-gradient(135deg, #9c9a9a, #f0f0f0);
+}
 
 h1 {
     font-size: 2.5em;
