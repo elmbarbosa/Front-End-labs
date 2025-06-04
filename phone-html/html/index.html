@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Phone</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Phone</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="theme-business">
-    <h1>Virtual Phone</h1>
-    <span class="icon" title="Limpar display">❌</span>
-    <input type="tel" placeholder="Digite o número" disabled>
+  <h1>Virtual Phone</h1>
+  <span class="icon" title="Limpar display">❌</span>
+  <input type="tel" placeholder="Digite o número" disabled>
 
-    <section class="teclado">
-        <input type="button" value="1">
-        <input type="button" value="2">
-        <input type="button" value="3">
-        <input type="button" value="4">
-        <input type="button" value="5">
-        <input type="button" value="6">
-        <input type="button" value="7">
-        <input type="button" value="8">
-        <input type="button" value="9">
-        <input type="button" value="#">
-        <input type="button" value="0">
-        <input type="button" value="*">
-    </section>
+  <section class="teclado">
+      <input type="button" value="1">
+      <input type="button" value="2">
+      <input type="button" value="3">
+      <input type="button" value="4">
+      <input type="button" value="5">
+      <input type="button" value="6">
+      <input type="button" value="7">
+      <input type="button" value="8">
+      <input type="button" value="9">
+      <input type="button" value="#">
+      <input type="button" value="0">
+      <input type="button" value="*">
+  </section>
 
-    <button id="themeToggle">Trocar Tema 🎨</button>
+  <!-- Botão para Ligar -->
+    <button id="ligar-button">Ligar</button>
+<!-- Botão para Cancelar -->
+    <button id="cancel-button">Cancelar</button>
 
-    <script src="../js/main.js"></script>
-    <script>
-        const body = document.body;
-        const toggleButton = document.getElementById('themeToggle');
-        const themes = ['theme-gamer', 'theme-business', 'theme-sunset', 'theme-dark', 'theme-light'];
-        let currentTheme = 0;
 
-        toggleButton.addEventListener('click', () => {
-            body.classList.remove(themes[currentTheme]);
-            currentTheme = (currentTheme + 1) % themes.length;
-            body.classList.add(themes[currentTheme]);
-        });
-    </script>
+  <button id="themeToggle">Trocar Tema 🎨</button>
+
+  <script src="../js/main.js"></script>
+  <script>
+    const body = document.body;
+    const toggleButton = document.getElementById('themeToggle');
+    const themes = ['theme-gamer', 'theme-business', 'theme-sunset', 'theme-dark', 'theme-light'];
+    let currentTheme = 0;
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.remove(themes[currentTheme]);
+      currentTheme = (currentTheme + 1) % themes.length;
+      body.classList.add(themes[currentTheme]);
+    });
+  </script>
 </body>
 </html>
